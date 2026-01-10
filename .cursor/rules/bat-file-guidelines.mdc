@@ -1,0 +1,25 @@
+---
+description: >
+  BAT/ CMD ファイル作成時の文字コード・改行・pause 制御・コメント方式を統一する（AGENTS.md: 2,3）。
+globs:
+  - "**/*.bat"
+  - "**/*.cmd"
+alwaysApply: false
+---
+
+## ファイルフォーマット
+- エンコーディング：Shift-JIS（ANSI）で保存する（UTF-8 は禁止）。
+- 改行コード：CRLF（Windows 標準）で統一する。
+- `chcp 65001 >nul` は使用しない。
+
+## Pause コマンド（親子プロセス制御）
+他の `.bat` から `call` されたときに不要な停止を防ぐため、以下の形式で記述する。
+
+```bat
+echo %CMDCMDLINE% | find /i "%~nx0" >nul && pause
+```
+
+## コメント記述ルール
+- `::`（ダブルコロン）または `echo` を使用する。
+- `REM` は禁止（文字化けの可能性があるため）。
+
