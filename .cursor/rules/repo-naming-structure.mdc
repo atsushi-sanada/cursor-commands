@@ -26,5 +26,6 @@
 
 - ツールが名称を要求する場合のみ例外を許可し、理由をドキュメント化する。
 - 例外例：`Assets/`、`ProjectSettings/`（Unity）、`Sources/`（Xcode）
+- 例外例：`README.md`、`AGENTS.md`（リポジトリ/運用上の慣例として広く固定名が使われるため）
 - 大文字 → 小文字のリネームが必要な場合は、`git mv` を用いて段階的に変更する。
 - 例：`git mv Assets temp_assets && git mv temp_assets assets`

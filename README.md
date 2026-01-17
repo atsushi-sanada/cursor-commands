@@ -29,12 +29,12 @@ Cursor エディタでの開発作業を効率化するための**コマンド**
 
 | コマンド                  | 内容                                                                                       |
 | ------------------------- | ------------------------------------------------------------------------------------------ |
-| `workflow-start.md`       | 仕様駆動開発用。タスク実行の 5 段階フロー（要件定義 → 設計 → 実装計画 →issue 作成 → 実行） |
-| `project-rule-setup.md`   | 新規プロジェクトのセットアップ（AGENTS.md を作成して、適切な Project Rule を作成）         |
-| `SetupGasEnvironment.md`  | GAS 開発環境構築（clasp 設定、プロジェクト構造、BAT ファイルの自動生成）                   |
-| `CreateVSCodeSettings.md` | プロジェクトルートに`.vscode`フォルダと`settings.json`を作成                               |
-| `SetTitleBarColor.md`     | プロジェクトのタイトルバー色設定を`.vscode/settings.json`に追加または更新                  |
-| `FeatchProject.md`        | 現在のプロジェクトについて把握する                                                         |
+| `start_workflow.md`       | 仕様駆動開発用。タスク実行の 5 段階フロー（要件定義 → 設計 → 実装計画 →issue 作成 → 実行） |
+| `setup_project_rurles.md` | 新規プロジェクトのセットアップ（AGENTS.md を作成して、適切な Project Rule を作成）         |
+| `setup_gas_environment.md`  | GAS 開発環境構築（clasp 設定、プロジェクト構造、BAT ファイルの自動生成）                 |
+| `create_vscode_settings.md` | プロジェクトルートに`.vscode`フォルダと`settings.json`を作成                             |
+| `set_title_bar_color.md`    | プロジェクトのタイトルバー色設定を`.vscode/settings.json`に追加または更新                |
+| `fetch_project.md`          | 現在のプロジェクトについて把握する                                                       |
 
 ---
 
@@ -42,9 +42,9 @@ Cursor エディタでの開発作業を効率化するための**コマンド**
 
 | コマンド            | 内容                                                         |
 | ------------------- | ------------------------------------------------------------ |
-| `run-todo-tasks.md` | 指示を実行可能な最小単位の Todo タスクに分解（5〜30 分単位） |
-| `suggest-only.md`   | コード修正は行わず、提案のみを行う                           |
-| `GitCommitPush.md`  | Git のコミットとプッシュを実行                               |
+| `run_todo_tasks.md` | 指示を実行可能な最小単位の Todo タスクに分解（5〜30 分単位） |
+| `suggest_only.md`   | コード修正は行わず、提案のみを行う                           |
+| `git_commit_push.md`  | Git のコミットとプッシュを実行                             |
 
 ---
 
@@ -52,14 +52,14 @@ Cursor エディタでの開発作業を効率化するための**コマンド**
 
 | コマンド                  | 内容                                                       |
 | ------------------------- | ---------------------------------------------------------- |
-| `AnalyzeBug.md`           | バグの原因分析と修正方法の提案（コード修正なし）           |
-| `FixBug.md`               | バグ修正を 6 ステップの標準プロセスで実行                  |
-| `SetLogs.md`              | バグ切り分け用のログ出力処理を挿入                         |
-| `RunTest.md`              | テストを実行し、成功するまで修正を繰り返す                 |
-| `ReadUnityEditorLog.md`   | Unity Editor ログファイルを読み取り、エラーや警告を分析    |
-| `inlineComment.md`        | コードにインラインコメントを自動挿入                       |
-| `DocumentationComment.md` | ソースコードの関数にドキュメンテーションコメントを自動付与 |
-| `CreateREADME.md`         | プロジェクト用の README.md を自動生成                      |
+| `analyze_bug.md`           | バグの原因分析と修正方法の提案（コード修正なし）           |
+| `fix_bug.md`               | バグ修正を 6 ステップの標準プロセスで実行                  |
+| `set_logs.md`              | バグ切り分け用のログ出力処理を挿入                         |
+| `run_test.md`              | テストを実行し、成功するまで修正を繰り返す                 |
+| `read_unity_editor_log.md` | Unity Editor ログファイルを読み取り、エラーや警告を分析    |
+| `add_inline_comment.md`        | コードにインラインコメントを自動挿入                   |
+| `add_documentation_comment.md` | ソースコードの関数にドキュメンテーションコメントを自動付与 |
+| `create_readme.md`         | プロジェクト用の README.md を自動生成                      |
 
 ---
 
@@ -67,9 +67,9 @@ Cursor エディタでの開発作業を効率化するための**コマンド**
 
 | コマンド               | 内容                                          |
 | ---------------------- | --------------------------------------------- |
-| `EasyWrite.md`         | 新卒や初心者向けに文章を調整                  |
-| `MarkdownFormatter.md` | Markdown ドキュメントを整形                   |
-| `CleanAiDocs.md`       | AI が生成した文章を資料として使えるように整形 |
+| `fix_easy_write.md`     | 新卒や初心者向けに文章を調整                 |
+| `formatte_markdown.md`  | Markdown ドキュメントを整形                  |
+| `clean_ai_docs.md`      | AI が生成した文章を資料として使えるように整形 |
 
 ---
 
@@ -77,7 +77,7 @@ Cursor エディタでの開発作業を効率化するための**コマンド**
 
 | コマンド                   | 内容           |
 | -------------------------- | -------------- |
-| `hr-evaluation-prompts.md` | 人事評価を出力 |
+| `hr_evaluation_prompts.md` | 人事評価を出力 |
 
 ---
 
@@ -87,7 +87,7 @@ Cursor エディタでの開発作業を効率化するための**コマンド**
 2. Cursor エディタを再起動します
 3. チャットで `/コマンド名` と入力して実行します
 
-**例**: `/FixBug` と入力してバグ修正を実行
+**例**: `/fix_bug` と入力してバグ修正を実行
 
 ---
 
@@ -95,7 +95,7 @@ Cursor エディタでの開発作業を効率化するための**コマンド**
 
 - **コマンドが認識されない**: コマンドが正しく配置されているか確認し、Cursor エディタを再起動してください
 - **実行結果が期待と異なる**: 各コマンドファイルの前提条件を確認してください
-- **複数コマンドを組み合わせる**: `run-todo-tasks.md` を使用してタスクを分解してください
+- **複数コマンドを組み合わせる**: `run_todo_tasks.md` を使用してタスクを分解してください
 
 ---
 
