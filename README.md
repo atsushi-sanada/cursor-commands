@@ -84,7 +84,7 @@ Cursor エディタでの開発作業を効率化するための **コマンド�
 | `read_unity_editor_log.md` | Unity Editor ログファイルを読み取り、エラーや警告を分析    |
 | `add_inline_comment.md`        | コードにインラインコメントを自動挿入                   |
 | `add_documentation_comment.md` | ソースコードの関数にドキュメンテーションコメントを自動付与 |
-| `create_readme.md`         | プロジェクト用の README.md を自動生成                      |
+| `create_readme.md`         | README作成ルールに基づいてプロジェクト用の README.md を自動生成 |
 
 ---
 
