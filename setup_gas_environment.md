@@ -12,9 +12,9 @@ Google Apps Script（GAS）を JavaScript で IDE 開発するための作業環
 
 ### 前提条件
 
-- Node.js と npm がインストールされていること
 - Google アカウントにアクセスできること
 - Google Apps Script API が有効化されていること（手順を案内）
+- **注意**: Node.js と npm は未インストールの場合、自動でインストールします
 
 ### プロジェクトパス
 
@@ -24,7 +24,15 @@ Google Apps Script（GAS）を JavaScript で IDE 開発するための作業環
 
 - Node.js/npm のバージョンを確認する
   - `node --version`と`npm --version`を実行してバージョンを確認
-  - 未インストールの場合はエラーメッセージを表示し、[Node.js 公式サイト](https://nodejs.org/)からインストールするよう案内
+  - 未インストールの場合は自動でインストールを実行する
+    - `winget`の存在確認: `winget --version`を実行して確認
+    - `winget`が利用不可の場合、`winget`をインストールする
+      - Microsoft Store経由でインストール: `start ms-windows-store://pdp/?ProductId=9NBLGGH4NNS1`を実行してMicrosoft Storeを開き、App Installerをインストール
+      - または、PowerShellでGitHubから直接ダウンロードしてインストール
+        - `Invoke-WebRequest`でwingetの最新リリースをダウンロード
+        - ダウンロードしたパッケージをインストール
+    - `winget`でNode.js LTS版をインストール: `winget install OpenJS.NodeJS.LTS`を実行
+    - インストール後、再度`node --version`と`npm --version`を実行してインストールを確認
 - clasp のインストール状況を確認する
   - `clasp --version`を実行してインストール状況を確認
   - 未インストールの場合はグローバルインストール: `npm install -g @google/clasp`
@@ -228,7 +236,7 @@ Google Apps Script（GAS）を JavaScript で IDE 開発するための作業環
   - 明示的に除外するファイルだけを指定する方式に変更することを推奨
   - 修正後は`clasp status`で`src`配下のファイルが`Tracked files`に表示されることを確認
 - **API 未有効化**: Google Apps Script API の有効化手順を詳細に案内
-- **Node.js/npm 未インストール**: インストール手順を案内
+- **Node.js/npm 未インストール**: 自動でインストールを実行（wingetがなければwingetをインストールしてからNode.jsをインストール）
 - **clasp 未インストール**: インストールコマンドを実行
 - **scriptId 未設定**: `.clasp.json`の`scriptId`フィールドに入力するよう案内
 - **中断時**: 完了したステップまでを保存し、再開時に前回の状態を確認
