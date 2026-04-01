@@ -61,6 +61,7 @@
 - `run_todo_tasks.md`：指示を 5〜30 分の実行単位に分解し、完了まで順次実行する
 - `suggest_only.md`：コード変更はせず提案のみ行う
 - `coding_agent.md`：非エンジニアの自然文依頼を、期待値整理とアーキテクチャ確認を経て安全に実装する
+- `review_agent.md`：実装後の変更を技術レビューし、必要な修正とリファクタリングまで実施する
 - `git_commit_push.md`：安全ルールに沿ってコミットとプッシュを行う
 - `git_pullrequest_upstream.md`：PR 作成（upstream ベース想定）
 
