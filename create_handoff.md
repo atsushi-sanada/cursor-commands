@@ -20,8 +20,8 @@
 
 - 既存ファイルを上書きしないため、毎回新規ファイルとして保存します
 - 保存先（推奨）：
-  - `docs/handover/handoff_YYYY-MM-DD_HHmm_<task>.md`
-  - 例：`docs/handover/handoff_2026-01-29_1530_fix_login_bug.md`
+  - `docs/handoff/handoff_YYYY-MM-DD_HHmm_<task>.md`
+  - 例：`docs/handoff/handoff_2026-01-29_1530_fix_login_bug.md`
 
 ※ `<task>` は英小文字＋`_`区切り（snake_case）で、短く具体的にしてください。
 
